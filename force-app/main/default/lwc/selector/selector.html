@@ -1,0 +1,17 @@
+<template>
+    <div class="wrapper">
+    <header class="header">Select a Bike</header>
+    <section class="content">
+        <div class="columns">
+        <main class="main" >
+            {name}
+            <c-list onproductselected={handleProductSelected}></c-list> <!-- child for selectore one-->
+        </main>
+        <aside class="sidebar-second">
+            <c-detail product-id={selectedProductId}></c-detail> <!-- child for selectore -->
+        </main>
+        </aside>
+        </div>
+    </section>
+    </div>
+</template>
